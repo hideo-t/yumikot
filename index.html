@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>つじむらゆみこ｜歌う、二児の母。親子に届く歌をつくっています</title>
+<meta name="description" content="つじむらゆみこ。神奈川生まれ・福島在住、二児の母。子育てをしながら、親子の暮らしのそばにある歌をつくっているシンガーソングライター。アルバム「Magic Hour」発売中。">
+
+<!-- OGP（LINE共有想定） -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hideo-t.github.io/yumikot/">
+<meta property="og:title" content="つじむらゆみこ｜歌う、二児の母。">
+<meta property="og:description" content="子育てしながら、親子に届く歌をつくっているママ。アルバム「Magic Hour」発売中。">
+<meta property="og:image" content="https://hideo-t.github.io/yumikot/img/hero.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="つじむらゆみこ｜歌う、二児の母。">
+<meta name="twitter:description" content="子育てしながら、親子に届く歌をつくっているママ。">
+<meta name="twitter:image" content="https://hideo-t.github.io/yumikot/img/hero.png">
+
+<!-- 外部依存は最小限：Google Fonts のみ（オフライン時はsystemフォントにフォールバック） -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Yomogi&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --cream:#fbf6ef;        /* 背景：あたたかい生成り */
+  --cream-2:#f5ece0;      /* セクション切替の薄背景 */
+  --ink:#4a4138;          /* 本文：やわらかいブラウングレー */
+  --ink-soft:#857a6e;     /* サブテキスト */
+  --apricot:#e79277;      /* アクセント：あんずいろ */
+  --apricot-d:#cf755b;
+  --rose:#dfa9b4;         /* 親子セクションのやさしい差し色 */
+  --sage:#8fae93;         /* 自然・福島・落ち着き */
+  --line:#ece1d3;
+  --maxw:1040px;
+  --shadow:0 14px 40px rgba(120,90,70,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','Meiryo',sans-serif;
+  color:var(--ink);background:var(--cream);line-height:1.95;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.sec{padding:74px 0}
+.sec--soft{background:var(--cream-2)}
+.hand{font-family:'Yomogi','Zen Maru Gothic',cursive}
+
+/* 見出し */
+.eyebrow{font-family:'Yomogi',cursive;color:var(--apricot-d);font-size:16px;margin-bottom:10px;letter-spacing:.04em}
+.h2{font-size:clamp(21px,4.6vw,30px);font-weight:700;letter-spacing:.04em;line-height:1.6;margin-bottom:8px}
+.h2 small{display:block;font-family:'Yomogi',cursive;font-weight:400;font-size:13px;color:var(--apricot-d);letter-spacing:.18em;margin-bottom:8px}
+.lede{color:var(--ink-soft);font-size:15px;line-height:2.05;margin-top:14px}
+
+/* ボタン */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;
+  padding:14px 30px;border-radius:40px;font-weight:700;font-size:15px;letter-spacing:.03em;
+  transition:.22s;border:1.5px solid transparent;cursor:pointer}
+.btn-fill{background:var(--apricot);color:#fff;box-shadow:0 8px 22px rgba(231,146,119,.35)}
+.btn-fill:hover{background:var(--apricot-d);transform:translateY(-2px)}
+.btn-line{background:#fff;color:var(--apricot-d);border-color:var(--apricot)}
+.btn-line:hover{background:var(--apricot);color:#fff;transform:translateY(-2px)}
+
+/* プレースホルダ画像 */
+.ph{width:100%;height:100%;object-fit:cover;display:block;background:var(--cream-2)}
+figure{margin:0}
+figcaption{font-size:12px;color:var(--ink-soft);margin-top:8px;text-align:center}
+
+/* ====== NAV ====== */
+.nav{position:sticky;top:0;z-index:100;background:rgba(251,246,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 22px}
+.nav-logo{font-weight:700;font-size:17px;letter-spacing:.05em}
+.nav-logo .s{font-family:'Yomogi',cursive;font-size:11px;color:var(--apricot-d);display:block;line-height:1;letter-spacing:.1em}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{padding:8px 12px;font-size:13.5px;font-weight:500;color:var(--ink-soft);border-radius:20px;transition:.18s}
+.nav-links a:hover{color:var(--apricot-d);background:#fff}
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:pointer}
+.nav-burger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+.mmenu{display:none;flex-direction:column;background:var(--cream);border-bottom:1px solid var(--line);padding:6px 22px 18px}
+.mmenu.on{display:flex}
+.mmenu a{padding:13px 4px;font-size:15px;border-bottom:1px solid var(--line);color:var(--ink)}
+
+/* ====== HERO ====== */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1200px 600px at 80% -10%, #fbe6da 0%, transparent 60%),
+  radial-gradient(900px 500px at 0% 110%, #eef0e2 0%, transparent 55%),
+  var(--cream)}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;padding:58px 0 64px}
+.hero-eye{font-family:'Yomogi',cursive;font-size:clamp(18px,4.4vw,24px);color:var(--apricot-d);margin-bottom:18px}
+.hero-title{font-size:clamp(26px,6vw,42px);font-weight:700;line-height:1.7;letter-spacing:.03em}
+.hero-title .mark{background:linear-gradient(transparent 62%, #fbdccd 62%);padding:0 .1em}
+.hero-sub{margin-top:22px;color:var(--ink-soft);font-size:15px;line-height:2.1}
+.hero-name{margin-top:26px;font-size:14px;letter-spacing:.06em}
+.hero-name b{font-size:19px;letter-spacing:.12em}
+.hero-name span{color:var(--ink-soft);font-size:12.5px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-fig{position:relative}
+.hero-fig .frame{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:linear-gradient(135deg,#f4ddd0,#e7d3df)}
+.hero-fig .tape{position:absolute;top:-12px;left:24px;background:var(--apricot);color:#fff;font-family:'Yomogi',cursive;
+  font-size:13px;padding:6px 16px;border-radius:20px;transform:rotate(-4deg);box-shadow:0 6px 14px rgba(231,146,119,.4)}
+
+/* ====== いまのわたし（3カード） ====== */
+.now-g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.now-c{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 24px;text-align:center;box-shadow:0 6px 18px rgba(120,90,70,.05)}
+.now-c .ic{font-size:36px;margin-bottom:14px}
+.now-c h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.now-c p{font-size:13.5px;color:var(--ink-soft);line-height:1.95}
+
+/* ====== 歌をつくる人 ====== */
+.maker{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:center}
+.maker-fig .frame{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1;background:linear-gradient(135deg,#eef0e2,#dfe7d6)}
+.story-quote{font-size:clamp(18px,4.4vw,23px);font-weight:700;line-height:1.85;letter-spacing:.02em;margin:6px 0 16px}
+.story-quote .u{background:linear-gradient(transparent 62%, #d8e6cf 62%)}
+.story p{font-size:14.5px;color:var(--ink);line-height:2.05;margin-bottom:14px}
+.credits{margin-top:22px;background:var(--cream-2);border-radius:16px;padding:20px 22px}
+.credits .ttl{font-family:'Yomogi',cursive;font-size:13px;color:var(--apricot-d);margin-bottom:10px}
+.credits ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.credits li{font-size:13px;color:var(--ink-soft);padding-left:18px;position:relative;line-height:1.7}
+.credits li::before{content:'♪';position:absolute;left:0;color:var(--apricot)}
+.credits .note{font-size:11.5px;color:var(--ink-soft);margin-top:12px;opacity:.8}
+
+/* ====== 音楽 / Magic Hour ====== */
+.album{display:grid;grid-template-columns:.8fr 1.2fr;gap:42px;align-items:center}
+.album-cover{position:relative}
+.album-cover .frame{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1;
+  background:linear-gradient(135deg,#f4d9c9,#cdbfd9 70%,#a9c0c8)}
+.album-cover .badge{position:absolute;bottom:14px;left:14px;background:rgba(255,255,255,.92);border-radius:14px;
+  padding:8px 14px;font-size:12px;font-weight:700;color:var(--apricot-d)}
+.album h3{font-size:clamp(24px,5vw,34px);font-weight:700;letter-spacing:.06em}
+.album .rel{color:var(--ink-soft);font-size:13.5px;margin:8px 0 18px;letter-spacing:.04em}
+.svc{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.svc a{font-size:12.5px;font-weight:500;color:var(--ink-soft);background:#fff;border:1px solid var(--line);
+  border-radius:30px;padding:9px 16px;transition:.18s}
+.svc a:hover{color:var(--apricot-d);border-color:var(--apricot);transform:translateY(-2px)}
+
+/* ====== 親子で聴く ====== */
+.oyako{background:
+  radial-gradient(800px 400px at 90% 0%, #fbe2e8 0%, transparent 60%),
+  radial-gradient(700px 400px at 0% 100%, #e9f0e2 0%, transparent 55%),
+  var(--cream)}
+.oyako-card{background:#fff;border-radius:26px;box-shadow:var(--shadow);overflow:hidden;
+  display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.oyako-card .pic{width:100%;height:100%;object-fit:cover;min-height:260px;display:block}
+.oyako-card .body{padding:38px 34px}
+.oyako-card h3{font-size:clamp(19px,4.4vw,24px);font-weight:700;line-height:1.7;margin-bottom:12px}
+.oyako-card p{font-size:14px;color:var(--ink-soft);line-height:2.05;margin-bottom:14px}
+.oyako-tags{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px}
+.oyako-tags span{font-size:12px;background:#fceef0;color:var(--apricot-d);border-radius:30px;padding:5px 14px}
+
+/* ====== ライブ＆ラジオ ====== */
+.lr{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 28px}
+.panel h3{font-size:18px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.panel .sub{font-size:12.5px;color:var(--ink-soft);margin-bottom:18px}
+.evt{display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.evt .d{font-family:'Yomogi',cursive;color:var(--apricot-d);font-size:13px;min-width:74px;line-height:1.5}
+.evt .t{font-size:13.5px;line-height:1.7}
+.evt .t b{font-weight:700}
+.radio-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.radio-list li{font-size:13.5px;line-height:1.7;padding-left:20px;position:relative}
+.radio-list li::before{content:'📻';position:absolute;left:0;font-size:13px}
+.muted-note{font-size:12px;color:var(--ink-soft);margin-top:16px;opacity:.85}
+
+/* ====== つながる ====== */
+.connect{text-align:center}
+.sns{display:flex;justify-content:center;gap:14px;margin:26px 0 30px;flex-wrap:wrap}
+.sns a{width:58px;height:58px;border-radius:50%;background:#fff;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-size:22px;transition:.2s;box-shadow:0 6px 16px rgba(120,90,70,.06)}
+.sns a:hover{transform:translateY(-3px);border-color:var(--apricot);color:var(--apricot-d)}
+.connect-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+
+/* ====== FOOTER ====== */
+footer{background:#efe6d9;color:var(--ink);padding:48px 0 36px;margin-bottom:64px}
+.ft-name{font-size:18px;font-weight:700;letter-spacing:.1em}
+.ft-name .s{font-family:'Yomogi',cursive;font-size:12px;color:var(--apricot-d);display:block}
+.ft-prof{font-size:12.5px;color:var(--ink-soft);line-height:1.95;margin-top:14px;max-width:560px}
+.ft-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;font-size:12.5px}
+.ft-links a{color:var(--ink-soft)}.ft-links a:hover{color:var(--apricot-d)}
+.ft-mock{margin-top:22px;font-size:11px;color:var(--ink-soft);border-top:1px dashed #cdbfaf;padding-top:14px;opacity:.9}
+.ft-copy{font-size:11px;color:var(--ink-soft);margin-top:8px}
+
+/* ====== 固定フッターCTA（モバイル聴く導線） ====== */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);border-top:1px solid var(--line);display:flex;gap:10px;padding:10px 16px;
+  box-shadow:0 -6px 20px rgba(120,90,70,.08)}
+.dock a{flex:1;text-align:center;min-height:46px;display:flex;align-items:center;justify-content:center;
+  border-radius:30px;font-size:13.5px;font-weight:700}
+.dock .a1{background:var(--apricot);color:#fff}
+.dock .a2{background:#fff;color:var(--apricot-d);border:1.5px solid var(--apricot)}
+
+/* ====== reveal ====== */
+.rv{opacity:0;transform:translateY(20px);transition:.7s ease}
+.rv.show{opacity:1;transform:none}
+
+/* ====== レスポンシブ（モバイルファースト調整） ====== */
+@media(max-width:880px){
+  .nav-links{display:none}.nav-burger{display:flex}
+  .hero-in{grid-template-columns:1fr;gap:30px;padding:40px 0 48px}
+  .hero-fig{order:-1;max-width:340px;margin:0 auto}
+  .now-g{grid-template-columns:1fr;gap:16px}
+  .maker{grid-template-columns:1fr;gap:28px}
+  .maker-fig{max-width:360px;margin:0 auto}
+  .album{grid-template-columns:1fr;gap:26px}.album-cover{max-width:300px;margin:0 auto}
+  .oyako-card{grid-template-columns:1fr}.oyako-card .pic{min-height:200px}
+  .lr{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .sec{padding:54px 0}
+  .album .svc a{font-size:12px}
+}
+@media print{
+  .nav,.dock,.nav-burger{display:none}
+  body{background:#fff}
+  .rv{opacity:1;transform:none}
+  .sec{padding:24px 0;page-break-inside:avoid}
+  .hero-fig .frame,.maker-fig .frame,.album-cover .frame,.oyako-card .pic{background:#eee !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="nav-logo">つじむらゆみこ<span class="s">歌う、二児の母。</span></a>
+    <nav class="nav-links">
+      <a href="#now">いまのわたし</a>
+      <a href="#maker">歌をつくる人</a>
+      <a href="#music">音楽</a>
+      <a href="#oyako">親子で聴く</a>
+      <a href="#live">ライブ＆ラジオ</a>
+      <a href="#connect">つながる</a>
+    </nav>
+    <button class="nav-burger" aria-label="メニューを開く" onclick="document.querySelector('.mmenu').classList.toggle('on')"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mmenu">
+    <a href="#now">いまのわたし</a>
+    <a href="#maker">歌をつくる人</a>
+    <a href="#music">音楽 / Magic Hour</a>
+    <a href="#oyako">親子で聴く</a>
+    <a href="#live">ライブ＆ラジオ</a>
+    <a href="#connect">つながる</a>
+  </nav>
+</header>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <p class="hero-eye">歌う、二児の母。</p>
+      <h1 class="hero-title">子育てしながら、<br><span class="mark">親子に届く歌</span>を<br>つくっているママ。</h1>
+      <p class="hero-sub">
+        神奈川で生まれて、いまは福島で暮らしています。<br>
+        二人の子を育てながら、毎日のそばにある歌をつくっています。
+      </p>
+      <p class="hero-name"><b>つじむらゆみこ</b>　<span>（辻村結實子）／シンガーソングライター</span></p>
+      <div class="hero-cta">
+        <a href="#music" class="btn btn-fill">♪ 歌を聴いてみる</a>
+        <a href="#maker" class="btn btn-line">どんな人？</a>
+      </div>
+    </div>
+    <div class="hero-fig">
+      <span class="tape">いつもの一日から</span>
+      <figure>
+        <div class="frame">
+          <img class="ph" src="img/hero.png" alt="つじむらゆみこ。歌う、二児の母としての等身大のアーティスト写真" loading="eager">
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. いまのわたし ============ -->
+<section class="sec" id="now">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Now</p>
+      <h2 class="h2"><small>いまの、わたし</small>母として歌う、毎日のこと。</h2>
+      <p class="lede">むかしの肩書きより、いま歌っていること。<br>子どもを送り出した日も、福祉施設のステージでも、ラジオのマイクの前でも――歌は、いまの暮らしの真ん中にあります。</p>
+    </div>
+    <div class="now-g">
+      <div class="now-c rv">
+        <div class="ic">🎸</div>
+        <h3>弾き語りで、近くへ</h3>
+        <p>福島の福祉施設から東京のライブまで。声と歌が届く距離で、ひとりひとりに歌っています。</p>
+      </div>
+      <div class="now-c rv">
+        <div class="ic">📻</div>
+        <h3>ラジオで、毎週そばに</h3>
+        <p>ふくしまFMほかにレギュラー出演。地元の声を聴きながら、暮らしの言葉で話しています。</p>
+      </div>
+      <div class="now-c rv">
+        <div class="ic">🏡</div>
+        <h3>福島で、子育てしながら</h3>
+        <p>震災を機に移り住んだ福島で、二人の子と暮らす日々。その生活そのものが、歌の源になっています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. 歌をつくる人 ============ -->
+<section class="sec sec--soft" id="maker">
+  <div class="wrap maker">
+    <div class="maker-fig rv">
+      <figure>
+        <div class="frame">
+          <img class="ph" src="img/artist-oty.jpg" alt="歌をつくるシンガーソングライター、つじむらゆみこ" loading="lazy">
+        </div>
+      </figure>
+    </div>
+    <div class="story rv">
+      <p class="eyebrow">Songwriter</p>
+      <h2 class="h2"><small>歌をつくる人</small></h2>
+      <p class="story-quote">あなたのお子さんが毎朝うたう<span class="u">歯みがきの歌</span>、<br>つくったの、わたしかもしれません。</p>
+      <p>NHK Eテレ「はなかっぱ」のエンディング「しゅわぴか☆はみがき」。作詞をしたのが、わたしです。子どもが自然と口ずさみ、暮らしの習慣にそっと寄りそう――そんな歌のつくり方を、ずっと続けてきました。</p>
+      <p>親子の歌、暮らしの歌を「本気でつくれる人」であること。その裏には、20年プロとして積み重ねてきた時間があります。看板にはしません。でも、信用の裏打ちとして、ここにそっと置いておきます。</p>
+      <div class="credits">
+        <p class="ttl">これまでの、たしかな足あと</p>
+        <ul>
+          <li>2005年 テイチクエンタテインメントよりメジャーデビュー</li>
+          <li>2006年 オリコン「サビだけ.com」一般投票で1位</li>
+          <li>NHK Eテレ「はなかっぱ」ED「しゅわぴか☆はみがき」作詞</li>
+          <li>「弱虫ペダル」キャラクターソング、アニメ「ISUCA」OP等に歌詞提供</li>
+          <li>3歳からピアノ。歌とことばを、暮らしの中で育ててきました</li>
+        </ul>
+        <p class="note">※経歴は本人公表の事実にもとづいて記載しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. 音楽 / Magic Hour ============ -->
+<section class="sec" id="music">
+  <div class="wrap">
+    <div class="rv center" style="text-align:center;margin-bottom:36px">
+      <p class="eyebrow">Music</p>
+      <h2 class="h2" style="margin:0 auto"><small>いちばん新しい歌</small>アルバム「Magic Hour」</h2>
+    </div>
+    <div class="album">
+      <div class="album-cover rv">
+        <figure>
+          <div class="frame">
+            <img class="ph" src="img/magic-hour.jpg" alt="つじむらゆみこ アルバム「Magic Hour」ジャケット" loading="lazy">
+          </div>
+          <span class="badge">2026.02.28 Release</span>
+        </figure>
+      </div>
+      <div class="rv">
+        <h3>Magic Hour</h3>
+        <p class="rel">2026年2月28日リリース ／ つじむらゆみこ</p>
+        <p class="lede" style="margin-top:4px">
+          一日のうちで、空がいちばんやさしい色になる時間。<br>
+          子どもとの帰り道や、寝かしつけのあとの静けさ――そんな“魔法の時間”を集めたアルバムです。
+        </p>
+        <p style="margin-top:18px"><a href="https://linkco.re/1MXEH30Z?lang=ja" target="_blank" rel="noopener" class="btn btn-fill">♪ 試聴・配信・ダウンロード</a></p>
+        <div class="svc">
+          <!-- 各サービス個別リンクはプレースホルダ -->
+          <a href="#" aria-label="Apple Musicで聴く（リンク準備中）">Apple Music</a>
+          <a href="#" aria-label="Spotifyで聴く（リンク準備中）">Spotify</a>
+          <a href="#" aria-label="Amazon Musicで聴く（リンク準備中）">Amazon Music</a>
+          <a href="#" aria-label="YouTube Musicで聴く（リンク準備中）">YouTube Music</a>
+          <a href="#" aria-label="CDを購入（リンク準備中）">CD購入</a>
+        </div>
+        <p class="muted-note">※各サービスの個別リンクは提案モックのプレースホルダです（「試聴・配信」ボタンは本人公表の配信ページにリンクしています）。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. 親子で聴く（差別化点） ============ -->
+<section class="sec oyako" id="oyako">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;margin-bottom:30px">
+      <p class="eyebrow">For Parent &amp; Child</p>
+      <h2 class="h2" style="margin:0 auto"><small>このサイトの、いちばん伝えたいこと</small>親子で、一緒に聴く。</h2>
+      <p class="lede" style="max-width:620px;margin:14px auto 0">子どもと並んで聴ける歌が、ここにあります。<br>歯みがきの歌をつくった人が、いま、あなたの家族のための歌をうたっています。</p>
+    </div>
+    <div class="oyako-card rv">
+      <img class="pic" src="img/top.png" alt="つじむらゆみこの音楽を、親子で一緒に聴くイメージ" loading="lazy" style="object-position:center 28%">
+      <div class="body">
+        <h3>「うちの子の、はじめての“好きな歌”に。」</h3>
+        <p>テレビの前で覚える歌があるように、暮らしのそばで自然に口ずさめる歌を。むずかしい言葉はいらない。お母さんの声と同じくらい、やさしい距離で届く歌をつくっています。</p>
+        <div class="oyako-tags">
+          <span># 寝かしつけに</span>
+          <span># 帰り道に</span>
+          <span># 親子で口ずさめる</span>
+          <span># はみがきの歌</span>
+        </div>
+        <p style="margin-top:18px"><a href="#music" class="btn btn-line">親子で聴ける曲から</a></p>
+        <!-- 要確認: 「親子向けプレイリスト/子ども向け楽曲」の具体的な選曲・公開有無は本人未確認のため、導線のみ提示 -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. ライブ＆ラジオ ============ -->
+<section class="sec sec--soft" id="live">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:30px">
+      <p class="eyebrow">Live &amp; Radio</p>
+      <h2 class="h2"><small>会いにいける、聴こえてくる</small>ライブと、ラジオ。</h2>
+    </div>
+    <div class="lr">
+      <div class="panel rv">
+        <h3>🎤 ライブ</h3>
+        <p class="sub">弾き語りを中心に、福島〜東京で活動しています。</p>
+        <div class="evt"><div class="d">弾き語り</div><div class="t"><b>各地でのライブ</b><br>声と歌が届く距離で、ひとりひとりへ。</div></div>
+        <div class="evt"><div class="d">東京</div><div class="t"><b>東京ライブ</b><br>福島から、まちへ歌を届けに。</div></div>
+        <div class="evt"><div class="d">福島</div><div class="t"><b>福祉施設ライブ</b><br>暮らしのそばで、やさしい時間を。</div></div>
+        <p class="muted-note">最新の日程は各SNS・ファンクラブでお知らせします。<!-- 要確認: 直近の公演日程は未確認のため具体日付は記載していません --></p>
+      </div>
+      <div class="panel rv">
+        <h3>📻 ラジオ</h3>
+        <p class="sub">毎週、声でそばにいます。</p>
+        <ul class="radio-list">
+          <li>ふくしまFM「つじむらゆみこのちょっとイイね♪」</li>
+          <li>ふくしまFM「ロック愛好会」</li>
+          <li>「RADIO GROOVE」テーマソング</li>
+          <li>ウルトラFM レギュラー出演</li>
+        </ul>
+        <p class="muted-note">放送日時・周波数は各局の最新情報をご確認ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. つながる ============ -->
+<section class="sec connect" id="connect">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Connect</p>
+      <h2 class="h2" style="margin:0 auto"><small>これからも、そばで</small>つながる。</h2>
+      <p class="lede" style="max-width:520px;margin:14px auto 0">日々のこと、新しい歌のこと。よかったら、ゆるくつながってください。</p>
+    </div>
+    <div class="sns rv">
+      <a href="https://x.com/tsujiyumi" target="_blank" rel="noopener" aria-label="X（旧Twitter）">𝕏</a>
+      <a href="https://www.instagram.com/yumikotsujimura" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+      <a href="https://www.facebook.com/share/16pB2mVyBB/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+    </div>
+    <div class="connect-cta rv">
+      <a href="https://tsujiyumi.fanpla.jp/" target="_blank" rel="noopener" class="btn btn-fill">ファンクラブ</a>
+      <a href="https://tsujiyumi.fanpla.jp/faq" target="_blank" rel="noopener" class="btn btn-line">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <p class="ft-name">つじむらゆみこ<span class="s">歌う、二児の母。</span></p>
+    <p class="ft-prof">
+      辻村結實子。神奈川県藤沢市出身、福島県在住の二児の母。3歳からピアノを始め、2005年テイチクエンタテインメントよりメジャーデビュー。NHK Eテレ「はなかっぱ」ED「しゅわぴか☆はみがき」作詞ほか、親子・キャラクターソングへの歌詞提供多数。東日本大震災を機に福島へ移住し、弾き語りライブとラジオを軸に活動。アルバム「Magic Hour」（2026.02.28）発売中。
+    </p>
+    <div class="ft-links">
+      <a href="https://x.com/tsujiyumi" target="_blank" rel="noopener">X</a>
+      <a href="https://www.instagram.com/yumikotsujimura" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/16pB2mVyBB/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://tsujiyumi.fanpla.jp/" target="_blank" rel="noopener">ファンクラブ</a>
+    </div>
+    <p class="ft-mock">CONCEPT MOCK ／ 非公式デザイン提案 ― 本ページは第三者が制作したコンセプト提案用モックであり、ご本人公認のものではありません。掲載の写真はすべてプレースホルダです。</p>
+    <p class="ft-copy">© つじむらゆみこ（記載の経歴は本人公表情報に基づく非公式提案）</p>
+  </div>
+</footer>
+
+<!-- ============ 固定CTA ============ -->
+<div class="dock">
+  <a href="https://linkco.re/1MXEH30Z?lang=ja" target="_blank" rel="noopener" class="a1">♪ Magic Hour を聴く</a>
+  <a href="#oyako" class="a2">親子で聴く</a>
+</div>
+
+<script>
+// モバイルメニュー：リンクで閉じる
+document.querySelectorAll('.mmenu a').forEach(function(a){
+  a.addEventListener('click',function(){document.querySelector('.mmenu').classList.remove('on')});
+});
+// スクロール・リビール
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}});
+},{threshold:.14});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
