@@ -209,9 +209,50 @@ footer{background:#efe6d9;color:var(--ink);padding:48px 0 36px;margin-bottom:64p
   .oyako-card{grid-template-columns:1fr}.oyako-card .pic{min-height:200px}
   .lr{grid-template-columns:1fr}
 }
+/* モバイル可読性（〜600px）: 文字を大きく・行間ゆったり・コントラスト改善・字間控えめ */
+@media(max-width:600px){
+  body{font-size:16px;line-height:1.9}
+  .wrap{padding:0 18px}
+  .eyebrow{font-size:15px}
+  .h2{letter-spacing:.01em;line-height:1.6}
+  .h2 small{font-size:12.5px;letter-spacing:.12em}
+  .lede{font-size:15.5px;line-height:2;color:#665b4d}
+  .hero-eye{font-size:21px;margin-bottom:14px}
+  .hero-title{font-size:clamp(25px,7.4vw,34px);line-height:1.62;letter-spacing:.005em}
+  .hero-sub{font-size:15px;line-height:2;color:#5f5547;margin-top:18px}
+  .hero-name{margin-top:20px}
+  .hero-cta{gap:10px}
+  .hero-cta .btn{flex:1 1 46%;padding:14px 18px}
+  .now-c{padding:26px 22px}
+  .now-c h3{font-size:18px}
+  .now-c p{font-size:14.5px;line-height:1.95;color:#5f5547}
+  .story-quote{font-size:20px;line-height:1.78}
+  .story p{font-size:15px;line-height:2;color:#4f463b}
+  .credits{padding:22px 20px}
+  .credits li{font-size:13.5px;line-height:1.85;color:#5f5547}
+  .album h3{letter-spacing:.03em}
+  .album .lede{font-size:15px}
+  .oyako-card .body{padding:30px 24px}
+  .oyako-card h3{font-size:20px;line-height:1.62}
+  .oyako-card p{font-size:14.5px;line-height:1.95;color:#5f5547}
+  .oyako-tags span{font-size:12.5px}
+  .panel{padding:26px 22px}
+  .panel h3{font-size:19px}
+  .evt .t{font-size:14.5px;line-height:1.8}
+  .evt .d{font-size:13.5px}
+  .radio-list li{font-size:14.5px;line-height:1.8}
+  .muted-note{font-size:12.5px;line-height:1.7}
+  .svc a{font-size:13px;padding:10px 16px}
+  .connect .lede{font-size:15px}
+  .ft-prof{font-size:13px;line-height:2;color:#6b6052}
+  .ft-mock{font-size:11.5px;line-height:1.75}
+  .mmenu a{padding:15px 4px;font-size:16px}
+}
 @media(max-width:480px){
-  .sec{padding:54px 0}
-  .album .svc a{font-size:12px}
+  .sec{padding:50px 0}
+  .wrap{padding:0 16px}
+  .hero-title{font-size:clamp(23px,7.6vw,30px)}
+  .dock a{font-size:13.5px}
 }
 @media print{
   .nav,.dock,.nav-burger{display:none}
