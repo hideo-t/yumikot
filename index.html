@@ -230,7 +230,9 @@ footer{background:#efe6d9;color:var(--ink);padding:48px 0 36px;margin-bottom:64p
 @media(max-width:880px){
   .nav-links{display:none}.nav-burger{display:flex}
   .hero-in{grid-template-columns:1fr;gap:30px;padding:40px 0 48px}
-  .hero-fig{order:-1;max-width:340px;margin:0 auto}
+  .hero-fig{order:-1;max-width:340px;margin:14px auto 0}
+  /* モバイルは画像が先頭に来るため、タグをフレーム内側に収めてナビとの重なり・見切れを防ぐ */
+  .hero-fig .tape{top:12px;left:12px}
   .now-g{grid-template-columns:1fr;gap:16px}
   .maker{grid-template-columns:1fr;gap:28px}
   .maker-fig{max-width:360px;margin:0 auto}
